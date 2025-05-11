@@ -229,6 +229,13 @@ h2::after {
     border-radius: 8px 8px 0 0;
 }
 
+.project-card .project-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
 .project-card h3 {
     padding: 1rem 1rem 0.5rem;
     color: var(--primary-color);
@@ -241,8 +248,28 @@ h2::after {
 .project-tags {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 1rem 1rem;
+    padding: 0 1rem 0.5rem;
     gap: 0.5rem;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+}
+
+.project-links a {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.project-links a:hover {
+    background-color: var(--accent-color);
+    color: white;
 }
 
 .project-tags span {
@@ -418,7 +445,7 @@ footer .container {
     
     /* Proyectos */
     .projects-grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
     
     /* CV */
